@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ partial "components/header.html" . }}
+
+<div class="blog list">
+{{ partial "blog/hero" . }}
+
+    <div class="white-bg">
+        <div class="container">
+            <section class="main">
+            {{ partial "blog/posts" . }}
+            </section>
+        </div>
+
+    {{ partial "contact.html" . }}
+    </div>
+</div>
+{{ end }}

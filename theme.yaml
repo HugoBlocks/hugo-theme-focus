@@ -1,0 +1,10 @@
+name: "Focus"
+license: "MIT"
+licenselink: "https://raw.githubusercontent.com/lsenta/hugo-theme-focus/master/LICENSE.md"
+description: "Focus is a clean and simple theme for workers, originally designed by @lsenta / @laurentsenta"
+homepage: "https://github.com/lsenta/hugo-theme-focus"
+tags: ["landing", "blog", "dark", "purple", "lsenta"]
+taxonomies:
+  tag: "tags"
+#TODO: features : ["blog", "disqus", "google analytics", "pagination", "rss", "sharing options"]
+#TODO: min_version : 0.14

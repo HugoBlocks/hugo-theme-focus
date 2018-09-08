@@ -1,0 +1,352 @@
+// Custom Colors
+// =============
+
+$balanced-white: #FBFCFD;
+$corporate-grey: #565657;
+
+$heavy-purple: #140D22;
+$discrete-purple: #211734;
+$vibrant-purple: #8B5AE3;
+
+$heavy-yellow: #F1B61A;
+$warm-yellow: #F1B61A;
+
+$body-bg: $heavy-purple;
+$body-color: $balanced-white;
+
+$primary: $warm-yellow;
+
+$font-family-base: 'Vollkorn', serif;
+$headings-font-family: 'Vollkorn', serif;
+
+$font-family-base: 'Quicksand', sans-serif;
+$headings-font-family: 'EB Garamond', serif;
+
+// Required
+// ========
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Optional
+// ========
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/utilities/flex";
+@import "node_modules/bootstrap/scss/utilities/text";
+@import "node_modules/bootstrap/scss/utilities/spacing";
+@import "node_modules/bootstrap/scss/utilities/display";
+
+// Are you missing a component import? uncomment:
+// TODO: broken navbar, miss an import
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// Custom Design
+// =============
+html {
+}
+
+.container-fluid.blog-header {
+  padding: 0;
+}
+
+body {
+  background: url("/pattern.png") repeat;
+  scroll-behavior: smooth;
+}
+
+.push-down-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.btn-circle {
+  border: 2px solid $heavy-yellow;
+  display: inline-block;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  line-height: 5.7rem;
+
+  &:hover {
+    border-color: $link-hover-color;
+  }
+}
+
+.bg-translucent {
+  background-color: #ffffff0a;
+}
+
+a.btn-circle {
+  transition: all linear 0.1s;
+
+  &:hover {
+    background-color: $heavy-yellow;
+    color: $balanced-white;
+  }
+}
+
+.invert {
+  background-color: $heavy-yellow;
+  color: $heavy-purple;
+
+  h2 {
+    color: $heavy-purple;
+  }
+}
+
+.light {
+  h2 {
+    color: $corporate-grey;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: $balanced-white;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h3 {
+  width: 100%;
+}
+
+.marged {
+  padding: 1rem;
+}
+
+.white-bg {
+  background-color: $balanced-white;
+  color: $heavy-purple;
+}
+
+.content-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.single {
+  .cover {
+    height: 40vh;
+    margin-bottom: 1rem;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+}
+
+.post-content {
+  font-size: 1.2rem;
+  line-height: 1.58;
+  font-weight: 200;
+
+  h2 {
+    margin-top: 0.78em;
+    margin-bottom: 0.3em;
+    font-size: 1.7rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: 700;
+  }
+
+  ol {
+    display: block;
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .figure {
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre {
+    width: 100%;
+    background-color: #1b1e21;
+    color: #2daf10;
+    border: 1px solid #222;
+    border-radius: 0.9em;
+    padding: 1em;
+  }
+
+  blockquote {
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+    color: #5d5d5d;
+  }
+}
+
+.jumbotron {
+  padding: 0.9rem 0 4rem 0;
+  margin-bottom: 1rem;
+}
+
+.landing #hero {
+  min-height: 73vh;
+}
+
+.blog #hero {
+  min-height: 33vh;
+
+  h2 {
+    color: lighten($corporate-grey, 20%);
+    font-size: 1.2em;
+  }
+}
+
+.blog .main {
+  margin-bottom: 5rem;
+}
+
+.pagination {
+  margin: 5rem 2rem 2rem 2rem;
+}
+
+#hero {
+  margin-top: 6vh;
+  position: relative;
+  padding-bottom: 5rem;
+
+  .highlight {
+    color: $warm-yellow;
+  }
+
+  .intro {
+    opacity: 0.8;
+  }
+
+  .tagline {
+    color: $heavy-yellow;
+    text-align: center;
+  }
+
+  .leads {
+    margin-top: 1rem;
+  }
+
+  .lead {
+    opacity: 0.8;
+  }
+
+  .pic {
+    img {
+      border-radius: 50%;
+      border: $discrete-purple 5px solid;
+    }
+  }
+
+  #cta {
+    text-align: center;
+
+    .btn {
+      margin: 1em;
+    }
+  }
+}
+
+#features {
+  padding: 0.9rem 0 4rem 0;
+
+  .card-columns {
+    @include media-breakpoint-only(sm) {
+      column-count: 1;
+    }
+
+    @include media-breakpoint-only(md) {
+      column-count: 2;
+    }
+
+    @include media-breakpoint-only(lg) {
+      column-count: 3;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 3;
+    }
+
+    .card {
+      color: $balanced-white;
+      background-color: $heavy-purple;
+      border-color: $heavy-yellow;
+
+      .card-footer {
+        border-top: 1px solid rgba($heavy-yellow, 0.2);
+        background-color: rgba($heavy-yellow, 0.1);
+      }
+
+      h3 {
+        color: $warm-yellow;
+      }
+    }
+
+    .tagline {
+    }
+  }
+}
+
+#references {
+  a {
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.jumbotron-light {
+  color: $balanced-white;
+}
+
+#contact {
+  padding-top: 0.9rem;
+}
+
+#footer {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+  .links {
+    a {
+      font-size: 3em;
+
+      &:hover {
+      }
+    }
+  }
+
+  #followup {
+    margin-top: 3rem;
+
+    h4 > a {
+      quotes: "“" "”" "‘" "’";
+    }
+    h4 > a:before {
+      content: open-quote;
+    }
+    h4 > a:after {
+      content: close-quote;
+    }
+  }
+}
+
