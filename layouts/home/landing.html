@@ -1,11 +1,12 @@
 {{ define "main" }}
 {{ partial "components/header.html" . }}
 
-<div class="landing">
-    {{ partial "landing/hero.html" . }}
-    {{ partial "landing/benefits.html" . }}
-    {{ partial "landing/features.html" . }}
-    {{ partial "landing/references.html" . }}
-    {{ partial "contact.html" . }}
+<div class="landing container">
+{{ range .Params.blocks }}
+    {{ $block := (printf "%s%s" "landing/" .kind ) }}
+    {{ partial $block . }}
+    {{ end }}
 </div>
+
+{{ partial "components/footer.html" . }}
 {{ end }}

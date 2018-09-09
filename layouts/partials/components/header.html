@@ -1,13 +1,13 @@
-<div class="container-fluid blog-header">
-    <nav class="navbar navbar-expand-sm navbar-dark bg-translucent justify-content-center">
+<div class="container blog-header">
+    <nav class="navbar navbar-expand-sm  justify-content-center">
 
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-        {{ with .Params.Navbar.Logo }}
-            <img src="{{ . }}" height="42" class="d-inline-block align-top" alt="{{ .Site.Title }}">
+        <a class="navbar-brand" href="{{ $.Site.BaseURL }}">
+        {{ if $.Site.Params.Navbar.Logo }}
+            <img src="{{ $.Site.Params.Navbar.Logo }}" height="42" class="d-inline-block align-top"
+                 alt="{{ $.Site.Params.Navbar.Title }}">
+        {{ else }}
+                {{ $.Site.Params.Navbar.Title }}
         {{ end }}
-        {{ with .Params.Navbar.Title }}
-                {{ . }}
-                {{ end }}
         </a>
 
         <button class="navbar-toggler nav-link navbar-toggler-right align-middle" type="button"

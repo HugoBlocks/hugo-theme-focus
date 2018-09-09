@@ -1,0 +1,26 @@
+<div class="cta-card row justify-content-center">
+    <div class="col-sm-10">
+        <div class="card text-center">
+            <div class="card-body">
+            {{ with .title }}
+                <h2 id="cta" class="card-title">
+                {{ . }}
+                </h2>
+            {{ end }}
+
+            {{ with .body }}
+                <p class="card-text">
+                {{ . }}
+                </p>
+            {{ end }}
+
+            {{ with .action }}
+                <a class="btn-cta" target="_blank" href="{{ .url }}">
+                    <i class="far fa-download" aria-hidden="true"></i>
+                {{ .detail }}
+                </a>
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
