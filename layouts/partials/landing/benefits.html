@@ -1,27 +1,27 @@
 <div class="benefits">
     <h2 class="text-center">
-    {{ .title }}
+    {{ .content.title }}
     </h2>
 
     <div class="row">
-    {{ range $i, $e := .benefits }}
+    {{ range $i, $e := .content.benefits }}
     {{ $benefits_count := $e | len }}
         <div class="mt-2 col-12 col-md-4 order-{{ if $e.main }}1{{ else }}{{ add $i 2 }}{{ end }}">
 
         {{ with .title }}
-            <h3 class="">{{.}}</h3>
+            <h3 class="">{{ . | markdownify }}</h3>
         {{ end }}
 
         {{ with .image }}
-            <img class="img-fluid" src="{{ . }}"/>
+            <img class="img-fluid" src="{{ . | markdownify }}"/>
         {{ end }}
 
         {{ with .tagline }}
-            <p class="tagline">{{.}}</p>
+            <p class="tagline">{{ . | markdownify }}</p>
         {{ end }}
 
         {{ with .copy }}
-            <p class="copy">{{.}}</p>
+            <p class="copy">{{ . | markdownify }}</p>
         {{ end }}
         </div>
     {{ end }}

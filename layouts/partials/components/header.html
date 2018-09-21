@@ -1,9 +1,8 @@
-<div class="container blog-header">
-    <nav class="navbar navbar-expand-sm  justify-content-center">
-
-        <a class="navbar-brand" href="{{ $.Site.BaseURL }}">
+<div class="container header">
+    <nav>
+        <a class="brand" href="{{ $.Site.BaseURL }}">
         {{ if $.Site.Params.Navbar.Logo }}
-            <img src="{{ $.Site.Params.Navbar.Logo }}" height="42" class="d-inline-block align-top"
+            <img src="{{ $.Site.Params.Navbar.Logo }}"
                  alt="{{ $.Site.Params.Navbar.Title }}">
         {{ else }}
                 {{ $.Site.Params.Navbar.Title }}
@@ -14,7 +13,7 @@
                 data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
+            <i class="far fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">

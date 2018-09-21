@@ -2,23 +2,21 @@
     <div class="col-sm-10">
         <div class="card text-center">
             <div class="card-body">
-            {{ with .title }}
+            {{ with .content.title }}
                 <h2 id="cta" class="card-title">
                 {{ . }}
                 </h2>
             {{ end }}
 
-            {{ with .body }}
+            {{ with .content.body }}
                 <p class="card-text">
                 {{ . }}
                 </p>
             {{ end }}
 
-            {{ with .action }}
+            {{ with .content.action }}
                 <a class="btn-cta" target="_blank" href="{{ .url }}">
-                    <i class="far fa-download" aria-hidden="true"></i>
-                {{ .detail }}
-                </a>
+                    <i class="far fa-download" aria-hidden="true"></i> {{ .detail }}</a>
             {{ end }}
             </div>
         </div>

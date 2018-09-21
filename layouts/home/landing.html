@@ -3,9 +3,9 @@
 
 <div class="landing container">
 {{ range .Params.blocks }}
-    {{ $block := (printf "%s%s" "landing/" .kind ) }}
-    {{ partial $block . }}
-    {{ end }}
+{{ $block := (printf "%s%s" "landing/" .kind ) }}
+{{ partial $block (dict "content" . "ctx" $) }}
+{{ end }}
 </div>
 
 {{ partial "components/footer.html" . }}

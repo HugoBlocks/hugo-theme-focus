@@ -1,0 +1,71 @@
+<div class="social-links">
+{{ with $.Site.Params.Author.Facebook }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.Instagram }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.twitter }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.github }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="github">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.blog }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="blog">
+            <i class="far fa-rss"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.linkedin }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="linkedin">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+{{ end }}
+
+{{ with $.Site.Params.Author.angellist }}
+    <div>
+        <a href="{{ . }}"
+           target="_blank"
+           title="angel">
+            <i class="fab fa-angellist"></i>
+        </a>
+    </div>
+{{ end }}
+</div>

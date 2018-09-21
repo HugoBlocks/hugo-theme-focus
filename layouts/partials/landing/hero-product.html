@@ -1,0 +1,22 @@
+<div class="hero row align-items-center justify-content-center">
+    <div class="pic col-10 col-md-6">
+        <img class="img-fluid" src="{{ .content.image }}">
+    </div>
+    <a class="hero col-10 col-md-6 text-center text-md-left">
+    {{ with .content.title }}
+        <h1>{{ . | markdownify }}</h1>
+    {{ end }}
+
+    {{ with .content.subtitle }}
+        <h2>{{ . | markdownify }}</h2>
+    {{ end }}
+
+    {{ with .content.description }}
+        <p>{{ . | markdownify }}</p>
+    {{ end }}
+
+    {{ with .content.action }}
+        <a class="btn-cta" target="_blank" href="{{ .url }}">
+            <i class="far fa-download" aria-hidden="true"></i> {{ .detail }}</a>
+    {{ end }}
+</div>

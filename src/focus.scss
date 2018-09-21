@@ -28,34 +28,7 @@ $headings-font-family: 'EB Garamond', serif;
 
 // Required
 // ========
-@import "bootstrap/functions";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
-
-// Optional
-// ========
-@import "bootstrap/reboot";
-@import "bootstrap/type";
-@import "bootstrap/images";
-@import "bootstrap/grid";
-@import "bootstrap/buttons";
-@import "bootstrap/jumbotron";
-@import "bootstrap/card";
-@import "bootstrap/forms";
-@import "bootstrap/badge";
-@import "bootstrap/alert";
-@import "bootstrap/_buttons.scss";
-@import "bootstrap/utilities/flex";
-@import "bootstrap/utilities/text";
-@import "bootstrap/utilities/spacing";
-@import "bootstrap/utilities/display";
-@import "bootstrap/_nav.scss";
-@import "bootstrap/_navbar.scss";
-@import "bootstrap/utilities/_background.scss";
-
-// Are you missing a component import? uncomment:
-// TODO: broken navbar, miss an import
-// @import "bootstrap/bootstrap";
+@import "bootstrap/bootstrap";
 
 // Custom Design
 // =============
@@ -75,12 +48,32 @@ body {
   }
 }
 
+.btn-circle {
+  border-radius: 50%;
+  // border: 2px solid $primary;
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  line-height: 6rem;
+  font-size: 3.4rem;
+  transition: all linear 0.4s;
+
+  &:hover {
+    background-color: $primary;
+    color: $balanced-white;
+  }
+}
+
 .benefits {
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .cta-card {
-  margin-top: 2rem;
+  margin-top: 5rem;
+}
+
+.cta-social {
+  margin-top: 5rem;
 }
 
 .footer {
@@ -93,8 +86,39 @@ body {
   margin-top: 2rem;
 }
 
+.social-links {
+  @extend .row ;
+  @extend .text-center;
+
+  > div {
+    @extend .col;
+
+    > a {
+      @extend .btn-circle;
+    }
+  }
+}
+
 .btn-cta {
   @extend .btn;
   @extend .btn-lg;
   @extend .btn-primary;
 }
+
+.header > nav {
+  @extend .navbar;
+  @extend .navbar-expand-md;
+  @extend .justify-content-center;
+
+  .brand {
+    @extend .navbar-brand;
+
+    // logo
+    > img {
+      @extend .d-inline-block;
+      @extend .align-baseline;
+      height: 42px;
+    }
+  }
+}
+
