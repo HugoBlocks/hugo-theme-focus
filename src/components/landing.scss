@@ -299,4 +299,23 @@
       }
     }
   }
+
+  .action-social {
+    @extend .container;
+    margin-top: 2rem;
+
+    .links {
+      @extend .row;
+      @extend .justify-content-center;
+
+      .link {
+        @extend .col;
+        @extend .text-center;
+
+        a {
+          @extend .btn-circle;
+        }
+      }
+    }
+  }
 }

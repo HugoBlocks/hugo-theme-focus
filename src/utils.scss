@@ -18,24 +18,20 @@
 }
 
 .btn-circle {
-  border: 2px solid $secondary;
   display: inline-block;
   border-radius: 50%;
   width: 6rem;
   height: 6rem;
-  line-height: 5.7rem;
-
-  &:hover {
-    border-color: $link-hover-color;
-  }
+  line-height: 6rem;
+  font-size: 3.4rem;
 }
 
 a.btn-circle {
-  transition: all linear 0.1s;
+  transition: all linear 0.2s;
 
   &:hover {
-    background-color: $secondary;
-    color: $balanced-white;
+    background-color: $body-bg-invert;
+    color: $body-color-invert;
   }
 }
 
