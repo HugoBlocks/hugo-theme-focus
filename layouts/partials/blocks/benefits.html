@@ -2,7 +2,7 @@
 <div {{ with .id }}id="{{ . }}"{{ end }} class="benefits">
     <div>
         <h2>
-        {{ .title }}
+        {{ .title | markdownify }}
         </h2>
 
         <div class="items">
@@ -15,7 +15,11 @@
                 {{ .title | markdownify }}
                 </h3>
             {{ with .tagline }}
-                <p class="tagline">{{.}}</p>
+                <p class="tagline">{{ . | markdownify }}</p>
+            {{ end }}
+            {{ with .image }}
+            {{/*TODO: missing fields*/}}
+                <img src="{{ . }}"/>
             {{ end }}
             {{ with .image }}
             {{/*TODO: missing fields*/}}
@@ -23,7 +27,7 @@
             {{ end }}
 
             {{ with .copy }}
-                <p class="copy">{{.}}</p>
+                <p class="copy">{{ . | markdownify }}</p>
             {{ end }}
             </div>
         {{ end }}

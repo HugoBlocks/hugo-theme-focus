@@ -15,9 +15,11 @@
 
     {{ .Content }}
 
-    {{ partial "tags" . }}
-    {{ partial "pagination/single" . }}
-    {{ partial "subscribe.html" . }}
+    {{ if not ($.Param "is_standalone") }}
+        {{ partial "tags" . }}
+        {{ partial "pagination/single" . }}
+        {{ partial "subscribe.html" . }}
+    {{ end }}
 
         <div class="comments">
         {{ template "_internal/disqus.html" . }}

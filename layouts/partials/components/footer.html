@@ -1,3 +1,9 @@
 <div class="footer">
+    <p class="copyright">
+    {{ with .Site.Copyright }}
+        {{ . }}
+    {{ end }}
+    </p>
+
 {{ partial "author/links" . }}
 </div>
