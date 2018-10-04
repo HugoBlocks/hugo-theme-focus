@@ -9,7 +9,6 @@
 
 .landing {
   h2 {
-    text-align: center;
     font-weight: 200;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -20,17 +19,10 @@
   }
 
   .hero {
-    @extend .container-fluid;
-    @extend .invert;
-
-    min-height: 63vh;
+    @extend .container;
     position: relative;
-    padding-top: 10rem;
+    padding-top: 2rem;
     padding-bottom: 5rem;
-
-    @extend %cover;
-    background-image: url('/landing/hero-cover.jpg');
-    background-origin: border-box;
 
     .content {
       @extend .row;
@@ -38,49 +30,26 @@
       @extend .text-center;
 
       .pic {
-        display: none;
+        @extend .col-10;
+        @extend .col-md-6;
+
+        img {
+          @extend .img-fluid;
+        }
       }
 
       .intro {
-        @extend .col-12;
-        @extend .text-center;
+        @extend .col-10;
+        @extend .col-md-6;
 
         h1 {
-          color: $white;
-          @extend .text-center;
-          @extend .mt-4;
+          margin-top: 3rem;
         }
 
         h2 {
           @extend .mt-3;
-          @extend .text-center;
-
           font-family: $font-family-base;
-          font-size: 1.5rem;
-          color: $white;
-        }
-      }
-
-      .leads {
-        @extend .mt-md-5;
-        @extend .text-center;
-        @extend .text-md-left;
-        margin-top: 1rem;
-
-        .lead {
-          opacity: 0.8;
-        }
-
-        .lead-1 {
-        }
-
-        .lead-2 {
-          @extend .d-none;
-          @extend .d-md-block;
-        }
-        .lead-3 {
-          @extend .d-none;
-          @extend .d-lg-block;
+          font-size: 1.0rem;
         }
       }
     }
@@ -132,31 +101,25 @@
       @extend .justify-content-center;
 
       .item {
-        @extend .card;
         @extend .mt-2;
-        @extend .ml-1;
-        @extend .col-11;
-        @extend .col-md-3;
-
-        padding: 1rem;
+        @extend .col-12;
+        @extend .col-md-4;
 
         img {
           @extend .img-fluid;
         }
 
         .tagline {
-          @extend .card-title;
         }
 
         .copy {
-          @extend .card-text;
         }
       }
     }
   }
 
   .action-card {
-    margin: 2rem auto auto;
+    margin: auto;
     width: 60%;
 
     & > div {
@@ -183,15 +146,13 @@
 
   .benefits {
     @extend .container-fluid;
-    @extend .invert;
     margin-bottom: 0;
-    margin-top: 0;
-
+    margin-top: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 
     h2 {
-      font-family: 'PT Serif', serif;
+      text-align: center;
     }
 
     & > div {
@@ -208,6 +169,10 @@
 
         h3 {
           font-family: $font-family-base;
+        }
+
+        img {
+          @extend .img-fluid;
         }
       }
     }

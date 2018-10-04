@@ -8,24 +8,21 @@
 
 .header {
   @extend .container;
-  @extend .bg-white;
+  // @extend .bg-white;
   padding: 0;
 }
 
 .main-navbar {
   @extend .navbar;
-  @extend .navbar-expand-sm;
-  @extend .navbar-light;
+  @extend .navbar-expand-md;
   @extend .justify-content-center;
-
-  font-family: $headings-small-font-family;
 
   .brand {
     @extend .navbar-brand;
 
     img {
       @extend .d-inline-block;
-      @extend .align-top;
+      @extend .align-baseline;
       height: 42px;
     }
   }
@@ -39,6 +36,7 @@
   .collapsable-content {
     @extend .collapse;
     @extend .navbar-collapse;
+    @extend .justify-content-center;
 
     & > div {
       @extend .navbar-nav;
