@@ -17,10 +17,7 @@
             {{ with .tagline }}
                 <p class="tagline">{{ . | markdownify }}</p>
             {{ end }}
-            {{ with .image }}
-            {{/*TODO: missing fields*/}}
-                <img src="{{ . }}"/>
-            {{ end }}
+
             {{ with .image }}
             {{/*TODO: missing fields*/}}
                 <img src="{{ . }}"/>
