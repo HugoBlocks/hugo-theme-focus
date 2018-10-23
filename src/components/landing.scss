@@ -55,7 +55,7 @@
     }
 
     .cta {
-      @extend .push-down-wrapper;
+      @extend .push-down-wrapper-and-center;
       @extend .d-flex;
       @extend .flex-row;
       @extend .justify-content-center;
