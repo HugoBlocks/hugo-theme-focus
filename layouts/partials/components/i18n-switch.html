@@ -1,6 +1,6 @@
 {{ if .IsTranslated }}
 {{ range .Translations }}
-<a class="translation" href="{{ .Permalink }}">
+<a class="translation" href="{{ .Permalink | relURL }}">
 {{ i18n .Lang }}
 </a>
 {{ end}}
