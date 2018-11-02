@@ -30,6 +30,10 @@ body {
   scroll-behavior: smooth;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .redirection {
   @extend .container;
   text-align: center;

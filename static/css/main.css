@@ -417,6 +417,9 @@ mark,
 body {
   scroll-behavior: smooth; }
 
+strong {
+  font-weight: bold; }
+
 .redirection {
   text-align: center;
   padding-top: 1rem; }
@@ -1252,7 +1255,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FFF !important; }
 
 .bg-transparent {
@@ -2008,10 +2011,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -3765,10 +3768,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -6589,10 +6592,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -7796,7 +7799,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FFF !important; }
 
 .bg-transparent {
@@ -8425,10 +8428,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -9661,10 +9664,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -10362,7 +10365,7 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FFF !important; }
 
 .bg-transparent {
@@ -10973,10 +10976,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -12209,10 +12212,10 @@ a.btn-circle, .landing .action-social .links .link a {
 .highlight {
   color: #17a2b8; }
 
-.bg-white, .landing .contact, .list .items, .single {
+.bg-white, .landing .contact, .list .items {
   background-color: #FBFCFD;
   color: #222; }
-  .bg-white h1, .landing .contact h1, .list .items h1, .single h1, .bg-white h2, .landing .contact h2, .list .items h2, .single h2, .bg-white h3, .landing .contact h3, .list .items h3, .single h3, .bg-white h4, .landing .contact h4, .list .items h4, .single h4, .bg-white h5, .landing .contact h5, .list .items h5, .single h5, .bg-white h6, .landing .contact h6, .list .items h6, .single h6 {
+  .bg-white h1, .landing .contact h1, .list .items h1, .bg-white h2, .landing .contact h2, .list .items h2, .bg-white h3, .landing .contact h3, .list .items h3, .bg-white h4, .landing .contact h4, .list .items h4, .bg-white h5, .landing .contact h5, .list .items h5, .bg-white h6, .landing .contact h6, .list .items h6 {
     color: #B5170D; }
 
 .single .categories {
@@ -12245,7 +12248,7 @@ a.btn-circle, .landing .action-social .links .link a {
     border-radius: 0.5rem; }
 
 .single {
-  margin-top: 0;
+  margin-top: 2rem;
   padding: 0 0 2rem; }
   .single .cover {
     height: 40vh;

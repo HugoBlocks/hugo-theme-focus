@@ -5,9 +5,8 @@
 @import "./forms";
 
 .single {
-  @extend .bg-white;
   @extend .container;
-  margin-top: 0;
+  margin-top: 2rem;
   padding: 0 0 2rem;
 
   .cover {
